@@ -1,0 +1,5 @@
+{
+  "name": "Am I Covered?",
+  "description": "A web application to help users understand how their potential or existing insurance policy works in real-world situations, providing simple, plain-English explanations for common scenarios.",
+  "requestFramePermissions": []
+}
