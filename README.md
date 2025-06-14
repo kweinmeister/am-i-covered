@@ -91,7 +91,6 @@ This project is built with:
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript.
 - [Vite](https://vitejs.dev/) - A fast build tool and development server.
-- Likely other libraries as defined in `package.json`.
 
 ## ⚠️ Disclaimer
 
