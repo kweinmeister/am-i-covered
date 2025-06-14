@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "start": "serve -s dist -l tcp://0.0.0.0:$PORT"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,8 @@
   "homepage": "https://github.com/kweinmeister/am-i-covered#readme",
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.5.2",
