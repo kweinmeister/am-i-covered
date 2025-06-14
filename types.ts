@@ -5,6 +5,7 @@ export enum PolicyType {
   AUTO = "Auto",
   HOME = "Home",
   RENTERS = "Renters",
+  PET = "Pet", // New entry
 }
 
 export interface Scenario {

@@ -3,6 +3,7 @@ import { Policy, PolicyType } from './types';
 import CarIcon from './components/icons/CarIcon';
 import HomeIcon from './components/icons/HomeIcon';
 import ApartmentIcon from './components/icons/ApartmentIcon';
+import PetIcon from './components/icons/PetIcon';
 
 export const POLICIES_DATA: Policy[] = [
   {
@@ -134,6 +135,49 @@ export const POLICIES_DATA: Policy[] = [
           "Document the incident: what, when, where, and any witnesses.",
           "Avoid admitting fault.",
           "Contact your insurance provider to report the potential claim.",
+        ],
+      },
+    ],
+  },
+  {
+    type: PolicyType.PET,
+    displayName: "Pet Insurance",
+    icon: PetIcon,
+    scenarios: [
+      {
+        id: "pet-illness-surgery",
+        title: "My dog ate something harmful and needs emergency surgery.",
+        description: "Pet insurance policies often cover unexpected illnesses and accidents. Coverage for surgery, hospitalization, and medication would depend on your specific plan details (e.g., accident-only vs. comprehensive illness and accident).",
+        deductibleInfo: "You'll typically have an annual deductible. Once met, the insurance will reimburse a percentage (e.g., 70%, 80%, 90%) of covered veterinary bills. There might also be annual or per-incident limits.",
+        nextSteps: [
+          "Seek immediate veterinary care for your pet.",
+          "Notify your pet insurance company as soon as possible, ideally before or right after the treatment.",
+          "Keep all vet records, invoices, and payment receipts.",
+          "Submit a claim to your insurer with all required documentation.",
+        ],
+      },
+      {
+        id: "pet-accident-injury",
+        title: "My cat was injured in a fight with another animal.",
+        description: "Accident coverage in pet insurance is designed for situations like this. It helps cover costs for treating injuries from accidents, such as lacerations, broken bones, or other trauma.",
+        deductibleInfo: "Your policy's deductible and reimbursement percentage apply. Some policies may have specific limits for certain types of accidents or treatments.",
+        nextSteps: [
+          "Get veterinary attention for your pet's injuries promptly.",
+          "Contact your pet insurance provider to inform them of the incident.",
+          "Gather all documentation from the vet visit.",
+          "File a claim, including itemized bills and medical records.",
+        ],
+      },
+      {
+        id: "pet-routine-wellness",
+        title: "Can I claim for my pet's annual check-up and vaccinations?",
+        description: "Standard pet insurance plans (accident and illness) typically do not cover routine wellness or preventative care like annual check-ups, vaccinations, or flea/tick prevention. However, many insurers offer optional wellness riders or separate wellness plans that can be added to your policy for an extra premium.",
+        deductibleInfo: "Wellness plans usually work by providing a set allowance for specific preventative care services per year, and often don't have a deductible in the same way accident/illness coverage does.",
+        nextSteps: [
+          "Review your policy documents to see if you have a wellness add-on or rider.",
+          "If you have a wellness plan, check its specific benefits and claim process.",
+          "Keep receipts for all wellness-related expenses.",
+          "Submit claims for wellness care according to your insurer's procedure, which might be separate from illness/accident claims.",
         ],
       },
     ],
