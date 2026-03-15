@@ -23,7 +23,7 @@
   "homepage": "https://github.com/kweinmeister/am-i-covered#readme",
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react-dom": "^19.2.4",
     "serve": "^14.2.6"
   },
   "devDependencies": {
